@@ -12,7 +12,7 @@
 		F88D6F4725DDEF08001F90AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88D6F4525DDEF08001F90AF /* Main.storyboard */; };
 		F88D6F4925DDEF08001F90AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88D6F4825DDEF08001F90AF /* ViewController.swift */; };
 		F88D6F4B25DDEF0A001F90AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88D6F4A25DDEF0A001F90AF /* Assets.xcassets */; };
-		F88D6F5225DDEF0A001F90AF /* MarkDownload - Markdown Web Clipper Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F88D6F5125DDEF0A001F90AF /* MarkDownload - Markdown Web Clipper Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F88D6F5225DDEF0A001F90AF /* MarkDownload - Markdown Web Clipper Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F88D6F5125DDEF0A001F90AF /* MarkDownload - Markdown Web Clipper Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F88D6F5725DDEF0A001F90AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88D6F5625DDEF0A001F90AF /* Cocoa.framework */; };
 		F88D6F5A25DDEF0A001F90AF /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88D6F5925DDEF0A001F90AF /* SafariWebExtensionHandler.swift */; };
 		F88D6F6E25DDEF0B001F90AF /* background in Resources */ = {isa = PBXBuildFile; fileRef = F88D6F6725DDEF0B001F90AF /* background */; };
@@ -35,15 +35,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F88D6F6225DDEF0A001F90AF /* Embed App Extensions */ = {
+		F88D6F6225DDEF0A001F90AF /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				F88D6F5225DDEF0A001F90AF /* MarkDownload - Markdown Web Clipper Extension.appex in Embed App Extensions */,
+				F88D6F5225DDEF0A001F90AF /* MarkDownload - Markdown Web Clipper Extension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -167,7 +167,7 @@
 				F88D6F3B25DDEF07001F90AF /* Sources */,
 				F88D6F3C25DDEF07001F90AF /* Frameworks */,
 				F88D6F3D25DDEF07001F90AF /* Resources */,
-				F88D6F6225DDEF0A001F90AF /* Embed App Extensions */,
+				F88D6F6225DDEF0A001F90AF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -203,7 +203,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					F88D6F3E25DDEF07001F90AF = {
 						CreatedOnToolsVersion = 12.4;
@@ -333,6 +333,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -394,6 +395,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -418,18 +420,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "MarkDownload - Markdown Web Clipper Extension/MarkDownload___Markdown_Web_Clipper_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4JYKNQ5WRZ;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 7YB9C5DSP3;
 				INFOPLIST_FILE = "MarkDownload - Markdown Web Clipper Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 3.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = au.death.MarkDownload.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavares.MarkDownload.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -440,18 +444,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "MarkDownload - Markdown Web Clipper Extension/MarkDownload___Markdown_Web_Clipper_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4JYKNQ5WRZ;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 7YB9C5DSP3;
 				INFOPLIST_FILE = "MarkDownload - Markdown Web Clipper Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 3.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = au.death.MarkDownload.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavares.MarkDownload.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -465,18 +471,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "MarkDownload - Markdown Web Clipper/MarkDownload___Markdown_Web_Clipper.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4JYKNQ5WRZ;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 7YB9C5DSP3;
 				INFOPLIST_FILE = "MarkDownload - Markdown Web Clipper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 3.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = au.death.MarkDownload;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavares.MarkDownload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -489,18 +498,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "MarkDownload - Markdown Web Clipper/MarkDownload___Markdown_Web_Clipper.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4JYKNQ5WRZ;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 7YB9C5DSP3;
 				INFOPLIST_FILE = "MarkDownload - Markdown Web Clipper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 3.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = au.death.MarkDownload;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavares.MarkDownload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
